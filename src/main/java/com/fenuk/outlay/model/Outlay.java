@@ -11,6 +11,19 @@ public class Outlay {
 	private long amount;
 	private String category;
 
+	public Outlay(long amount, String category) {
+
+		this.amount = amount;
+		this.category = category;
+	}
+
+	public Outlay(int id, long amount, String category) {
+
+		this.id = id;
+		this.amount = amount;
+		this.category = category;
+	}
+
 	public String getCategory() {
 		return category;
 	}
@@ -21,10 +34,6 @@ public class Outlay {
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public long getAmount() {

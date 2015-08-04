@@ -49,7 +49,7 @@ public class AppConfig {
 
 		EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
 		EmbeddedDatabase db = builder.setType(EmbeddedDatabaseType.HSQL)
-				.addScript("/sql/init_schema.sql").build();
+				.addScript("/sql/init.sql").build();
 		return db;
 	}
 }
