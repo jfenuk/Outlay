@@ -20,6 +20,11 @@ public class OutlayController {
 	public String view() {
 		return "dataTable";
 	}
+	
+	@RequestMapping("jsonArrayData.do")
+	public String jsonArrayData() {
+		return "jsonArrayData";
+	}
 
 	@RequestMapping("outlayformselector.do")
 	public String outlayFormSelector() {
